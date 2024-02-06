@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(2, 2, 28);
+        color: white;
+        font-family: "Poppins" sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(27 87 121);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0px 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: rgb(159, 158, 158);
+        font-size: 1.3rem;
+      }
+      nav ul li a:hover {
+        color: white;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 1.9rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 200px 0;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 3rem;
+      }
+      .leftsection img {
+        width: 50px;
+        height: 50px;
+      }
+      .leftsection p {
+        color: gray;
+        font-size: 1.5rem;
+        margin-top: 10px;
+      }
+      .leftsection .buttons {
+        margin-top: 30px;
+      }
+      .leftsection .btn {
+        width: 153px;
+        padding: 10px;
+        font-size: 15px;
+      }
+      .leftsection .btn a {
+        text-decoration: none;
+        color: white;
+      }
+      .rightsection img {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(51, 133, 181);
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: rgb(51, 133, 181);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Shivani's Portfolio</div>
+        <div class="right ">
+          <ul>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Skills & Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi <img src="Emoji.png" />, <br />I'm
+          <span class="purple">Shivani</span>
+          <div>and I'm a passionate</div>
+
+          <span id="element"></span>
+          <p>
+            I design and develop experiences that make people’s lives simpler
+            through Web and Mobile apps.I work with FIgma , HTML5, CSS3,
+            JavaScript and Flutterflow.
+          </p>
+          <div class="buttons">
+            <button
+              class="btn"
+              style="
+                background: rgb(2, 2, 28);
+                color: white;
+                border: 2px solid white;
+                border-radius: 10px;
+                font-size: 20px;
+                cursor: pointer;
+                width: 200px;
+              "
+            >
+              <a href="/ShivaniResume.pdf">Download Resume</a>
+            </button>
+            <button
+              class="btn"
+              style="
+                background: rgb(2, 2, 28);
+                color: white;
+                border: 2px solid white;
+                border-radius: 10px;
+                font-size: 20px;
+                cursor: pointer;
+                width: 200px;
+              "
+            >
+              <a href="https://github.com/shivanisb23">Visit Github</a>
+            </button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="bg.png" alt="web developer" />
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Electrical Engineer", "Food Blogger."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>

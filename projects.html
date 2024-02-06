@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        background-color: rgb(2, 2, 28);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(27 87 121);
+        width: 2000px;
+      }
+      .title {
+        font-size: 1.9rem;
+      }
+      .container {
+        height: fit-content;
+        width: 80%;
+        border-radius: 10px;
+        padding: 50px;
+        margin-top: 50px;
+        background: rgb(27 87 121);
+        color: black;
+        justify-content: space-evenly;
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+          0 6px 20px 0 rgba(255, 255, 255, 0.19);
+      }
+
+      .container .card {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(152, 151, 151, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 50px;
+        border-radius: 10px;
+        width: 100%;
+      }
+      .container .card1 {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        background-color: rgb(214, 211, 211);
+        padding: 10px;
+        box-shadow: 0 4px 8px 0 rgba(152, 151, 151, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 50px;
+        border-radius: 10px;
+        width: 100%;
+      }
+
+      .card .left {
+        font-size: 1.5rem;
+        width: 260px;
+        height: 150px;
+        text-align: center;
+      }
+      .card1 .left {
+        font-size: 1.5rem;
+        width: 260px;
+        height: 150px;
+        text-align: center;
+      }
+      .image {
+        display: block;
+        width: 70px;
+        height: 70px;
+        padding-left: 75px;
+      }
+      .right {
+        font-size: 1.2rem;
+      }
+
+      .container .skills {
+        display: flex;
+        align-items: center;
+        margin-left: 350px;
+        flex-direction: column;
+        margin-top: 20px;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(152, 151, 151, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 50px;
+        border-radius: 10px;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="title">Projects & Skills</div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="card">
+        <div class="left">
+          <img src="shoppingapp.png" class="image" /><br />Shopping Web
+          Application
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              Engineered Shopping Web Application useful for Admin and User.
+            </li>
+            <li>Project contains two modules : User Module and Admin Module</li>
+            <li>
+              User module allows user to browse product add the product to cart
+              and place the order
+            </li>
+            <li>User will also able to see the placed order details</li>
+            <li>
+              Admin Module will be only for shop owner/ admin, where admin will
+              be able to add or delete products
+            </li>
+            <li>
+              <b>Skills Used</b>: HTML, CSS, Javascript (for dashboard part),
+              MongoDB (for saving user and products)
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="left">
+          <img src="gym.png" class="image" /><br />Gym Portal
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              Seamless registration process for users with secure login
+              functionality
+            </li>
+            <li>
+              Users can easily verify their membership status and access details
+              of their current membership plan
+            </li>
+            <li>
+              Convenient option for users to renew expired memberships within
+              the portal.
+            </li>
+            <li>
+              New users can explore ongoing membership offers and view available
+              plans with detailed benefits.
+            </li>
+            <li>
+              Clear display of introductory offers and ongoing membership plans
+              for new users seeking to join the gym.
+            </li>
+            <li>
+              <b>Skills Used</b>: HTML, CSS (for dashboard part), MongoDB (for
+              saving user and products)
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="left">
+          <img src="weather.png" class="image" /><br />Weather App using
+          Flutterflow
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              User Authentication: Integrated the Login user and get token API
+              from dummyjson.com to authenticate users
+            </li>
+            <li>
+              Error Handling: Implemented error handling mechanisms to display a
+              snack bar alert for ’Invalid credentials’ when the entered
+              username or password is incorrect.
+            </li>
+            <li>
+              Weather Data Integration: Leveraged Realtime API services from
+              weatherapi.com to fetch weather details.Initially displays
+              real‑time weather information based on the device’s location.
+            </li>
+            <li>
+              Search Functionality: Included a search bar within the app
+              interface for users to manually input city names.Utilized the
+              Realtime API to fetch weather details for the specified cities
+              entered via the search bar.
+            </li>
+            <li>
+              UI/UX Components: Designed intuitive interfaces with Flutter
+              widgets for seamless user interaction.Implemented a clean and
+              user‑friendly interface for displaying weather information and
+              inputting city names.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="left">
+          <img src="portfolio.png" class="image" /><br />Personal Portfolio
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              Implemented a modern and visually appealing design using HTML,
+              CSS, and JavaScript.
+            </li>
+            <li>
+              Ensured a seamless experience across devices through responsive
+              design, showcasing adaptability to different screen sizes and
+              resolutions.
+            </li>
+            <li>
+              Integrated features such as animated transitions, dynamic content
+              loading, or interactive forms
+            </li>
+            <li>
+              Utilized semantic HTML for structure, modular CSS for styling, and
+              structured JavaScript code, showcasing a commitment to best coding
+              practices.
+            </li>
+            <li>
+              Showcased a diverse range of web development projects in the
+              portfolio, featuring brief descriptions, utilized technologies,
+              and roles played in the development process for a comprehensive
+              overview of skills and expertise.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="skills"><b>Skills : </b>HTML, CSS, JavaScript, Github</div>
+    </div>
+    
+  </body>
+</html>
